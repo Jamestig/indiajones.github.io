@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+	</head>
+	<body>
+		<section class="content">
+			<div class="content-container">
+				<div class="quote-container hide-5">
+					<p class="quote-1">“Almost nobody dances sober,</p>
+					<p class="quote-2 show-2">unless they happen to be insane.”</p>
+				</div>
+				<div class="main-container">
+
+					<div class="container__top">
+						<p class="info-1">
+							Arrive by own transport at MONA tennis courts 2pm. Ends 10pm.
+						</p>
+						<p class="info-2">
+							Theme: Pagan Winter Solstice (search Dark Mofo for ideas)
+						</p>
+						<p class="info-3">
+							Will you enter the darkness? RSVP yes no (click box)
+						</p>
+						<div class="rsvp-container">
+							<a id="rsvp-yes" href="">Yes</a>
+							<a id="rsvp-no" href="">No</a>
+						</div>
+					</div>
+
+					<h1>Fraser and India’s 30th</h1>
+				</div>
+
+				<div class="container__bottom">
+					<form action="https://formspree.io/f/mvovjnda" method="POST">
+						<label>
+							Your email:
+							<input type="text" name="_replyto" />
+						</label>
+						<label>
+							Your message:
+							<textarea name="message"></textarea>
+						</label>
+
+						<!-- your other form fields go here -->
+
+						<button type="submit">Send</button>
+					</form>
+					<!--
+					<form
+						id="my-form"
+						action="https://formspree.io/f/mvovjnda"
+						method="POST"
+					>
+						<label>Email:</label>
+						<input type="email" name="email" />
+						<label>Message:</label>
+						<input type="text" name="message" />
+						<button id="my-form-button">Submit</button>
+						<p id="my-form-status"></p>
+					</form>
+					-->
+				</div>
+			</div>
+			<div class="button-container">
+				<a class="open-button">+</a>
+			</div>
+		</section>
+
+		<section id="home-banner-box" class="home-banner loading">
+			<div class="image video-slide" style="background-image: url($ImageURL)">
+				<div class="video-background">
+					<div class="video-foreground" id="YouTubeBackgroundVideoPlayer"></div>
+				</div>
+			</div>
+		</section>
+
+		<script async src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script async src="js/main.js"></script>
+	</body>
+</html>
