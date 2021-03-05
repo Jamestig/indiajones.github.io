@@ -60,12 +60,10 @@ setTimeout(function () {
 	$(".open-button").fadeIn();
 }, 15000);
 
-// second quote show
 setTimeout(function () {
 	$(".quote-2").css("opacity", "1");
 }, 5000);
 
-// quote hide
 setTimeout(function () {
 	$(".quote-container p").css("opacity", "0");
 	$("h1").css("opacity", "1");
@@ -77,26 +75,22 @@ setTimeout(function () {
 $(".open-button").click(function () {
 	$(".open-button").hide();
 	$(".quote-container").hide();
-	$("h1").css({"color": "red", "opacity": "1"});
+	$("h1").css({"color": "red", "opacity": "1", "font-size": "91px", "margin-left": "-25vw", "margin-right": "-25vw"});
+	$("body.index").css("background-image", "url('/img/forest.jpg')");
+	$(".container").css("background", "rgba(0,0,0,0.2)");
 
 	setTimeout(function () {
-		$(".info-1").fadeIn();
-	}, 1000);
-	setTimeout(function () {
-		$(".info-2").fadeIn();
-	}, 2000);
-	setTimeout(function () {
-		$(".info-3").fadeIn();
+		$(".info-1").css('opacity', '1');
 	}, 3000);
 	setTimeout(function () {
-		$(".rsvp-container").fadeIn();
-	}, 4000);
-});
-
-// rsvp button
-$("#rsvp-yes").click(function (event) {
-	event.preventDefault();
-	$(".container__bottom").fadeIn();
+		$(".info-2").css('opacity', '1');
+	}, 5000);
+	setTimeout(function () {
+		$(".info-3").css('opacity', '1');
+	}, 7000);
+	setTimeout(function () {
+		$(".container__bottom").css('opacity', '1');
+	}, 10000);
 });
 
 window.addEventListener("DOMContentLoaded", function () {
