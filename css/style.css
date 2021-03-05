@@ -183,9 +183,9 @@ body.index {
 }
 
 h1 {
-  opacity: .05;
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease;
+  opacity: .1;
+  -webkit-transition: font-size .3s linear;
+  transition: font-size .3s linear;
 }
 
 @media screen and (max-width: 767px) {

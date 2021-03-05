@@ -66,7 +66,6 @@ setTimeout(function () {
 
 setTimeout(function () {
 	$(".quote-container p").css("opacity", "0");
-	$("h1").css("opacity", "1");
 }, 10000);
 
 // BUTTONS
