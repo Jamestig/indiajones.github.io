@@ -234,23 +234,19 @@ p {
   }
 }
 
-.button-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -120px;
-}
-
 .open-button {
   display: none;
   background: none;
   border: none;
   color: white;
   font-size: 100px;
+  z-index: 1000;
+  position: absolute;
 }
 
 .open-button:hover {
   color: red;
+  text-shadow: 0 0 10px red;
   cursor: pointer;
 }
 
