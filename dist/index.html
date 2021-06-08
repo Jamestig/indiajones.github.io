@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-</head>
-<body>
-	<h1>Home</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" href="img/favicon.png" />
+	</head>
+	<body class="index">
+		<section class="content">
+			<div class="container">
+				<div class="button-container">
+					<button class="open-button">+</button>
+				</div>
+
+				<div class="container__top">
+					<p class="info-1">
+						Arrive by own transport at MONA tennis courts 2pm. Ends 10pm.
+					</p>
+					<p class="info-2">
+						Theme: Pagan Winter Solstice (search Dark Mofo for ideas)
+					</p>
+					<p class="info-3">Will you enter the darkness? RSVP yes / no</p>
+				</div>
+
+				<div class="container__center">
+					<h1>Fraser and India's 30th</h1>
+					<div class="quote-container">
+						<p class="quote-1">“Almost nobody dances sober,</p>
+						<p class="quote-2">unless they happen to be insane.”</p>
+					</div>
+				</div>
+
+				<div class="container__bottom">
+					<form
+						id="my-form"
+						action="https://formspree.io/f/mvovjnda"
+						method="POST"
+					>
+						<label id="label__name"
+							>Hi Fraser & India, it's
+							<input type="text" id="name" name="name" />
+						</label>
+						<fieldset>
+							<legend>Am I coming to your party?</legend>
+							<label for="yes" id="label__yes">
+								<input type="checkbox" id="yes" name="yes" />YES
+							</label>
+							<label for="no" id="label__no">
+								<input type="checkbox" id="no" name="no" />NO
+							</label>
+						</fieldset>
+						<label id="label__message"
+							>Also, I need to tell you...
+							<input type="text" name="message" />
+						</label>
+						<button id="my-form-button">RSVP</button>
+						<p id="my-form-status"></p>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="home-banner-box" class="home-banner loading">
+			<div class="image video-slide">
+				<div class="video-background">
+					<div class="video-foreground" id="YouTubeBackgroundVideoPlayer"></div>
+				</div>
+			</div>
+		</section>
+
+		<audio autoplay loop src="/audio/spin.mp3"></audio>
+
+		<script async src="https://www.youtube.com/iframe_api"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script async src="js/script.js"></script>
+	</body>
 </html>

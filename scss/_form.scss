@@ -1,0 +1,77 @@
+fieldset {
+	border: none;
+}
+
+label,
+fieldset {
+	margin-bottom: 10px;
+}
+
+form {
+	display: flex;
+	flex-flow: column;
+	color: red;
+
+	label {
+		display: flex;
+		flex-flow: row;
+		justify-content: center;
+	}
+}
+
+#label__name {
+	align-items: baseline;
+}
+
+input#name {
+	background: none;
+	border: unset;
+	border-bottom: 3px solid red;
+	font-size: 50px;
+	max-width: 33%;
+	margin-left: 10px;
+}
+
+#label__yes,
+#label__no {
+	font-size: 36px;
+	display: inline-block;
+
+	&:hover {
+		border-bottom: 3px solid red;
+		margin-bottom: -3px;
+	}
+
+	input {
+		visibility: hidden;
+		position: relative;
+
+		&:checked::before {
+			content: "x";
+			font-size: 40px;
+			position: absolute;
+			visibility: visible;
+			color: white;
+			top: -20px;
+			left: -10px;
+		}
+	}
+}
+
+#label__no {
+	margin-left: 20px;
+}
+
+#label__message {
+	flex-flow: column;
+
+	input {
+		background: none;
+		border: unset;
+		border-bottom: 3px solid red;
+		color: red;
+		text-align: center;
+		font-size: 20px;
+		margin-top: 20px;
+	}
+}

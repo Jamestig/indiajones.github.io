@@ -1,0 +1,41 @@
+.quote-1 {
+	animation: color-change 3s linear;
+}
+
+.quote-2 {
+	opacity: 0;
+	animation: color-change 3s linear;
+}
+
+.container__bottom,
+.info-1,
+.info-2,
+.info-3 {
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+
+h1 {
+	opacity: .1;
+	transition: font-size .3s linear;
+
+	@media screen and (max-width: 767px) {
+		margin-left: 0 !important;
+		margin-right: -0 !important;
+	}
+}
+
+p{
+	transition: opacity 1s ease;
+}
+
+@keyframes color-change {
+	0% {
+		color: black;
+	}
+
+	100% {
+		color: red;
+	}
+}

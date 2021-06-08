@@ -1,0 +1,107 @@
+body {
+	background-color: black;
+}
+
+body.index {
+	background-image: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: background-image 1s ease;
+}
+
+.content {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+.container {
+	border: 5px solid red;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.quote-container {
+	box-shadow: 0 0 0 40vw black;
+	position: absolute;
+	right: -40px;
+	left: -40px;
+	top: -10px;
+	font-size: 27px;
+
+	p {
+		text-align: center;
+	}
+
+	.quote-1 {
+		margin-bottom: 40px;
+	}
+}
+
+.container__top {
+	p {
+		font-size: 19px;
+	}
+}
+
+.container__center {
+	position: relative;
+}
+
+.container__bottom {
+	max-width: 500px;
+	width: 90%;
+}
+
+@media screen and (max-width: 767px) {
+	body.index {
+		background-image: url("/img/forest.jpg");
+	}
+	.content {
+		padding: 10px;
+	}
+
+	.container {
+		width: 100%;
+		background: rgba(0, 0, 0, 0.4);
+	}
+
+	.quote-container {
+		display: none;
+	}
+
+	.open-button {
+		display: none !important;
+	}
+
+	h1,
+	.container__top p,
+	.container__bottom {
+		opacity: 1 !important;
+	}
+
+	h1 {
+		color: red;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.content {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.container {
+		padding: 40px;
+		height: 80vh;
+	}
+}

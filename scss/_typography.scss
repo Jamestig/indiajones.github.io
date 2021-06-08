@@ -1,0 +1,28 @@
+h1,
+h2 {
+	color: black;
+	font-family: 'Nanum Gothic Coding', monospace;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 50px;
+}
+
+h1 {
+	text-shadow: 0 0 10px red;
+}
+
+p,
+label,
+legend,
+input {
+	color: red;
+	font-family: 'Nanum Gothic Coding', monospace;
+}
+
+label {
+	font-size: 26px;
+}
+
+legend {
+	font-size: 26px;
+}
